@@ -1,6 +1,6 @@
 {
   "name": "@lifuzhao100/eventbus",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "repository": "https://github.com/lifuzhao100/eventbus.git",
   "author": "lifuzhao100 <lifuzhao1995@qq.com>",
   "bugs": {
@@ -26,5 +26,12 @@
     "build": "npm run cjs & npm run umd & npm run esm",
     "release": "standard-version",
     "lint": "eslint src"
-  }
+  },
+  "files": [
+    "dist/",
+    ".eslintrc.js",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ]
 }
