@@ -1,0 +1,29 @@
+{
+  "name": "eventbus",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/lifuzhao100/eventbus.git",
+  "author": "lifuzhao100 <lifuzhao1995@qq.com>",
+  "bugs": {
+    "url": "https://github.com/lifuzhao100/eventbus/issues"
+  },
+  "homepage": "https://github.com/lifuzhao100/eventbus#readme",
+  "license": "MIT",
+  "keywords": [
+    "event-bus"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "rollup": "^2.36.1",
+    "standard-version": "^9.1.0"
+  },
+  "scripts": {
+    "cjs": "rollup ./src/index.js --file ./dist/eventbus.cjs.js --format=cjs",
+    "umd": "rollup ./src/index.js --file ./dist/eventbus.umd.js --format=umd --name=EventBus",
+    "esm": "rollup ./src/index.js --file ./dist/eventbus.esm.js --format=es",
+    "build": "npm run cjs & npm run umd & npm run esm",
+    "release": "standard-version",
+    "lint": "eslint src"
+  }
+}
